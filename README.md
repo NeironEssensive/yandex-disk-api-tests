@@ -1,5 +1,7 @@
 # API-автотесты Яндекс Диска
 
+[![tests](https://github.com/NeironEssensive/yandex-disk-api-tests/actions/workflows/tests.yml/badge.svg)](https://github.com/NeironEssensive/yandex-disk-api-tests/actions/workflows/tests.yml)
+
 Пример проекта автотестов для [REST API Яндекс Диска](https://yandex.ru/dev/disk-api/doc/ru/):
 72 теста на методы **GET, POST, PUT, DELETE** (плюс PATCH) — от позитивных сценариев
 до проверок авторизации и конфликтов.
