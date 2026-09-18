@@ -1,0 +1,30 @@
+{
+  "max_file_size": 53687091200,
+  "unlimited_autoupload_enabled": false,
+  "total_space": 10737418240,
+  "trash_size": 4938,
+  "is_paid": false,
+  "used_space": 45248937,
+  "system_folders": {
+    "odnoklassniki": "disk:/Социальные сети/Одноклассники",
+    "google": "disk:/Социальные сети/Google+",
+    "instagram": "disk:/Социальные сети/Instagram",
+    "vkontakte": "disk:/Социальные сети/ВКонтакте",
+    "attach": "disk:/Почтовые вложения",
+    "mailru": "disk:/Социальные сети/Мой Мир",
+    "downloads": "disk:/Загрузки/",
+    "applications": "disk:/Приложения",
+    "facebook": "disk:/Социальные сети/Facebook",
+    "social": "disk:/Социальные сети",
+    "screenshots": "disk:/Скриншоты",
+    "photostream": "disk:/Фотокамера",
+    "scans": "disk:/Сканы"
+  },
+  "user": {
+    "country": "ru",
+    "login": "qa-autotest-demo",
+    "display_name": "QA Autotest",
+    "uid": "1130000000000000"
+  },
+  "revision": 1758189330000000
+}

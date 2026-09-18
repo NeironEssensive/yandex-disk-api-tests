@@ -1,0 +1,10 @@
+# Нормализация переводов строк: в репозитории всегда LF.
+* text=auto
+
+# Скрипты должны остаться с LF, иначе на Linux (в том числе в CI) они не запустятся.
+mvnw text eol=lf
+*.sh text eol=lf
+
+# Windows-скрипты — наоборот, только CRLF.
+mvnw.cmd text eol=crlf
+*.bat text eol=crlf

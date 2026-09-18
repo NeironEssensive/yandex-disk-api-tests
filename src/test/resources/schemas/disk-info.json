@@ -1,0 +1,32 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Ответ GET /v1/disk/",
+  "type": "object",
+  "required": ["total_space", "used_space", "trash_size", "system_folders"],
+  "properties": {
+    "total_space": {"type": "integer", "minimum": 0},
+    "used_space": {"type": "integer", "minimum": 0},
+    "trash_size": {"type": "integer", "minimum": 0},
+    "max_file_size": {"type": "integer", "minimum": 0},
+    "revision": {"type": "integer", "minimum": 0},
+    "is_paid": {"type": "boolean"},
+    "unlimited_autoupload_enabled": {"type": "boolean"},
+    "system_folders": {
+      "type": "object",
+      "required": ["applications", "downloads"],
+      "properties": {
+        "applications": {"type": "string", "pattern": "^disk:/"},
+        "downloads": {"type": "string", "pattern": "^disk:/"}
+      }
+    },
+    "user": {
+      "type": "object",
+      "properties": {
+        "uid": {"type": "string"},
+        "login": {"type": "string"},
+        "display_name": {"type": "string"},
+        "country": {"type": "string"}
+      }
+    }
+  }
+}

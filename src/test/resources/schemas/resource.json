@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "title": "Ресурс Диска: файл или папка",
+  "type": "object",
+  "required": ["name", "path", "type"],
+  "properties": {
+    "name": {"type": "string", "minLength": 1},
+    "path": {"type": "string", "pattern": "^(disk|trash):/"},
+    "type": {"enum": ["dir", "file"]},
+    "size": {"type": "integer", "minimum": 0},
+    "md5": {"type": "string", "pattern": "^[0-9a-fA-F]{32}$"},
+    "mime_type": {"type": "string"},
+    "created": {"type": "string"},
+    "modified": {"type": "string"},
+    "public_url": {"type": "string", "pattern": "^https://"},
+    "custom_properties": {"type": "object"},
+    "_embedded": {
+      "type": "object",
+      "required": ["path", "items", "limit", "offset"],
+      "properties": {
+        "path": {"type": "string"},
+        "limit": {"type": "integer", "minimum": 0},
+        "offset": {"type": "integer", "minimum": 0},
+        "total": {"type": "integer", "minimum": 0},
+        "sort": {"type": "string"},
+        "items": {
+          "type": "array",
+          "items": {
+            "type": "object",
+            "required": ["name", "path", "type"],
+            "properties": {
+              "name": {"type": "string"},
+              "path": {"type": "string", "pattern": "^(disk|trash):/"},
+              "type": {"enum": ["dir", "file"]}
+            }
+          }
+        }
+      }
+    }
+  }
+}

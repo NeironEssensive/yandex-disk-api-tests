@@ -1,0 +1,24 @@
+# Сборка
+target/
+
+# Секреты: токен передаётся через .env и в репозиторий не попадает
+.env
+
+# Отчёты Allure
+allure-results/
+allure-report/
+.allure/
+
+# IDE
+.idea/
+*.iml
+*.ipr
+*.iws
+.vscode/
+.settings/
+.classpath
+.project
+
+# ОС
+.DS_Store
+Thumbs.db

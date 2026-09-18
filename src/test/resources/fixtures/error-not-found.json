@@ -1,0 +1,5 @@
+{
+  "message": "Не удалось найти запрошенный ресурс.",
+  "description": "Resource not found.",
+  "error": "DiskNotFoundError"
+}
